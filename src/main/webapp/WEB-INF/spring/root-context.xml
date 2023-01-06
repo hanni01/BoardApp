@@ -24,5 +24,9 @@
 	<!-- SqlSessionFactoryBean은 DB와의 연결과 SQL의 실행에 대한 모든 것을 가진 객체이다 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+		<property name="mapperLocations" value="classpath:mappers/**/*.xml"></property>
 	</bean>
+	<mybatis-spring:scan base-package="mappers"/>
 </beans>
+

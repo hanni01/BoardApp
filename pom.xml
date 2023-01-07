@@ -54,14 +54,14 @@
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
-			<version>3.1.1</version>
+			<version>3.2.0</version>
 		</dependency>
 		
 		<!-- maven 사이트??에서 스프링 jdbc 버전을 지원해주는 버전으로 -->
 		<dependency>
 		    <groupId>org.mybatis</groupId>
 		    <artifactId>mybatis-spring</artifactId>
-		    <version>1.1.1</version>
+		    <version>1.2.0</version>
 		</dependency>
 		<!-- AspectJ -->
 		<dependency>

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.bootcamp.domain.BoardVO;
 import com.bootcamp.dao.BoardDAO;
 
-@Service("BoardService")
 public class BoardServiceImpl implements BoardService{
 
 	@Inject

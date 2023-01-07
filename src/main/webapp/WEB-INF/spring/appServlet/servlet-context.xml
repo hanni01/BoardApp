@@ -23,4 +23,11 @@
 	
 	<context:component-scan base-package="com.bootcamp" />
 	
+	<context:component-scan base-package="com.bootcammp">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		
+	</context:component-scan>
+	
 </beans:beans>

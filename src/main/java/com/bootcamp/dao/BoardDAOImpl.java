@@ -14,7 +14,7 @@ public class BoardDAOImpl implements BoardDAO{
 	
 	@Inject
 	private SqlSession session;
-	private static String namespace = "com.mapper.BoardMapper";
+	private static String namespace = "mappers.BoardMapper";
 	
 	//namespace가 com.mapper.BoardMapper인 곳의 id 찾아 매개변수 전달
 	@Override

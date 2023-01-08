@@ -27,6 +27,10 @@
 		<property name="configLocation" value="classpath:/mybatis-config.xml"></property>
 		<property name="mapperLocations" value="classpath:/mappers/**/*-Mapper.xml"></property>
 	</bean>
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+
 	<mybatis-spring:scan base-package="org.apache.ibatis.session"/>
 </beans>
 

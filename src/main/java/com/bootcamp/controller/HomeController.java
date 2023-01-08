@@ -13,21 +13,30 @@ import com.bootcamp.domain.BoardVO;
 import com.bootcamp.service.BoardService;
 
 @Controller
-@RequestMapping(value="/")
 public class HomeController {
 	
 	@Inject
 	private BoardService service;
-	
+
+	@RequestMapping(value="/")
+	public String home(){
+		return "home";
+	}
+
 	@RequestMapping(value = "/listAll", method = RequestMethod.GET)
 	public void listAll(Model model) throws Exception{
 		model.addAttribute("list", service.listAll());
 	}
 	
+	@RequestMapping(value = "/regist", method = RequestMethod.GET)
+	  public void registGET(BoardVO board, Model model) throws Exception {
+
+	}
+
 	@RequestMapping(value = "/regist", method = RequestMethod.POST)
-	  public String registPOST(BoardVO board, RedirectAttributes rttr) throws Exception { 	   
-		  service.regist(board); 	    
-	    return "redirect:/listAll";
+	public String registPOST(BoardVO board, RedirectAttributes rttr) throws Exception {
+		service.regist(board);
+		return "redirect:/listAll";
 	}
 	
 	@RequestMapping(value = "/read", method = RequestMethod.GET)

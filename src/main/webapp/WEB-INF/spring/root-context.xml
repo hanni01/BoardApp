@@ -13,10 +13,10 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<!-- MySQL dataSource -->
-	<bean id="dataSource"
+	<bean id="ds"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://127.0.0.1:3306/bootcamp_db01?useSSL=false&amp;serverTimezone=UTC"></property>
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/bootcamp_db01?useSSL=false"/>
 		<property name="username" value="hanni01"></property>
 		<property name="password" value="ha0226@"></property>
 	</bean>
@@ -24,9 +24,9 @@
 	<!-- SqlSessionFactoryBean은 DB와의 연결과 SQL의 실행에 대한 모든 것을 가진 객체이다 -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="ds"></property>
-		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
-		<property name="mapperLocations" value="classpath:mappers/**/*.xml"></property>
+		<property name="configLocation" value="classpath:/mybatis-config.xml"></property>
+		<property name="mapperLocations" value="classpath:/mappers/**/*-Mapper.xml"></property>
 	</bean>
-	<mybatis-spring:scan base-package="mappers"/>
+	<mybatis-spring:scan base-package="org.apache.ibatis.session"/>
 </beans>
 

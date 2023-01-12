@@ -5,8 +5,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="mappers.BoardMapper">
 	<insert id="create">
-	insert into tbl_board(title, content, writer)
-	values(#{title}, #{content}, #{writer})
+	<selectKey keyProperty="bno" resultType="int" order="BEFORE">
+		select BNO_AUTO_INCREMENT.nextval FROM dual
+	</selectKey>
+	insert into tbl_board(title, content, writer, bno)
+	values(#{title}, #{content}, #{writer}, #{bno})
 	</insert>
 	
 	<select id="read" resultType="com.bootcamp.domain.BoardVO">

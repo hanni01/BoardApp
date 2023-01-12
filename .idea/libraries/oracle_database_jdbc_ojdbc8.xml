@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="oracle.database.jdbc.ojdbc8" type="repository">
+    <properties maven-id="com.oracle.database.jdbc:ojdbc8:19.3.0.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/oracle/database/jdbc/ojdbc8/19.3.0.0/ojdbc8-19.3.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/oracle/database/jdbc/ucp/19.3.0.0/ucp-19.3.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/oracle/database/security/oraclepki/19.3.0.0/oraclepki-19.3.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/oracle/database/security/osdt_cert/19.3.0.0/osdt_cert-19.3.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/oracle/database/security/osdt_core/19.3.0.0/osdt_core-19.3.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/oracle/database/ha/simplefan/19.3.0.0/simplefan-19.3.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/oracle/database/ha/ons/19.3.0.0/ons-19.3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -18,8 +18,7 @@
     <textarea name=content rows ="10" cols="70" >${boardVO.content}</textarea><br>
 
     <button type ="submit">완료</button>
- 	</body>
-
+    </body>
  </form>
-
+</body>
 </html>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ page session="false"%>
@@ -7,30 +7,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>°Ô½ÃÆÇ ¸ñ·Ï</title>
+<title>ê²Œì‹œíŒ ëª©ë¡</title>
 </head>
 <form action = "regist" method="get">
 <body>
 <table border="1", width="880">
 	<tr>
 	<td width = "77">
-		<p align="center">±Û¹øÈ£</p>
+		<p align="center">ê¸€ë²ˆí˜¸</p>
 	</td>
 	
 	<td width="327">
-        <p align="center">Á¦¸ñ</p>
+        <p align="center">ì œëª©</p>
     </td>
     
     <td width="197">
-        <p align="center">ÀÛ¼ºÀÚ</p>
+        <p align="center">ìž‘ì„±ìž</p>
     </td>
 
     <td width="155">
-        <p align="center">ÀÛ¼ºÀÏ</p>
+        <p align="center">ìž‘ì„±ì¼</p>
     </td>
     
     <td width="90">
-        <p align="center">Á¶È¸¼ö</p>
+        <p align="center">ì¡°íšŒìˆ˜</p>
     </td>
     </tr>
     
@@ -44,7 +44,7 @@
 </tr>
     </c:forEach>
 </table>
-	<button type="submit">±Û¾²±â</button>
+	<button type="submit">ê¸€ì“°ê¸°</button>
 </body>
 </form>
 </html>

@@ -23,6 +23,7 @@ public class BoardDAOImpl implements BoardDAO{
 	}
 	@Override
 	public BoardVO read(Integer bno) throws Exception {
+		session.update(namespace+".viewcntUp", bno);
 		return session.selectOne(namespace+".read", bno);
 	}
 	@Override

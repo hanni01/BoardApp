@@ -21,6 +21,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	update tbl_board set title=#{title}, content=#{content}
 	where bno=#{bno}
 	</update>
+
+	<update id="viewcntUp">
+	update tbl_board set viewcnt=viewcnt+1 where bno=#{bno}
+	</update>
 	
 	<delete id="delete">
 	delete from tbl_board where bno=#{bno}

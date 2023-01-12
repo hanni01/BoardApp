@@ -1,19 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<title>±Û¾²±â</title>
+<title>ê¸€ì“°ê¸°</title>
 </head>
 <form method = "post"> 
 <body>
 
-<p><label>Á¦¸ñ</label><input type="text" name ="title"></p>
-<p><label>ÀÛ¼ºÀÚ</label><input type="text" name="writer" size="15">
+<p><label>ì œëª©</label><input type="text" id="title" name ="title"></p>
+<p><label>ìž‘ì„±ìž</label><input type="text" id="writer" name="writer" size="15">
 </p>
-<label>³»¿ë</label><p>
-<textarea rows="15" cols="65" name = "content"></textarea><p>
-<button type = "submit">µî·Ï</button>
+<label>ë‚´ìš©</label><p>
+<textarea id="content" rows="15" cols="65" name = "content"></textarea><p>
+<button type = "submit">ë“±ë¡</button>
 </body>
 </form>
 </html>

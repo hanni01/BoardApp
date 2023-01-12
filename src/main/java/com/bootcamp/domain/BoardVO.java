@@ -48,14 +48,14 @@ public class BoardVO {
 
 
 
-	public String getWirter() {
+	public String getWriter() {
 		return writer;
 	}
 
 
 
-	public void setWirter(String wirter) {
-		this.writer = wirter;
+	public void setWriter(String writer) {
+		this.writer = writer;
 	}
 
 
